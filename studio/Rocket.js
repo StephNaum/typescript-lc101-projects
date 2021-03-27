@@ -10,12 +10,11 @@ var Rocket = /** @class */ (function () {
     }
     //This method pushes all the massKg properties from the interface into an array
     Rocket.prototype.sumMass = function (items) {
-        var counter = 0;
+        var weight = 0;
         for (var i = 0; i < items.length; i++) {
-            counter = items[i].massKg;
-            counter += counter;
+            weight += items[i].massKg;
         }
-        return counter / 2;
+        return weight;
     };
     Rocket.prototype.currentMassKg = function () {
         var astronautsMass = this.sumMass(this.astronauts);

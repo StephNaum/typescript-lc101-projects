@@ -25,7 +25,7 @@ for (let i = 0; i < astronauts.length; i++) {
    } else {
       status = "Not on board";
    }
-   console.log(`${astronaut.name}: ${status} + current mass ${falcon9.currentMassKg()}`);
+   console.log(`${astronaut.name}: ${status}`);
 }
 
 let cargo: Cargo[] = [
@@ -44,7 +44,7 @@ for (let i = 0; i < cargo.length; i++) {
    } else {
       loaded = "Not loaded"
    }
-   console.log(`${c.material}: ${loaded} + current mass ${falcon9.currentMassKg()}`);
+   console.log(`${c.material}: ${loaded}`);
 }
 
 console.log(`Final cargo and astronaut mass: ${falcon9.currentMassKg()} kg.`);

@@ -23,7 +23,7 @@ for (var i = 0; i < astronauts.length; i++) {
     else {
         status_1 = "Not on board";
     }
-    console.log(astronaut.name + ": " + status_1 + " + current mass " + falcon9.currentMassKg());
+    console.log(astronaut.name + ": " + status_1);
 }
 var cargo = [
     new Cargo_1.Cargo(3107.39, "Satellite"),
@@ -41,6 +41,6 @@ for (var i = 0; i < cargo.length; i++) {
     else {
         loaded = "Not loaded";
     }
-    console.log(c.material + ": " + loaded + " + current mass " + falcon9.currentMassKg());
+    console.log(c.material + ": " + loaded);
 }
 console.log("Final cargo and astronaut mass: " + falcon9.currentMassKg() + " kg.");

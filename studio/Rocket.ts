@@ -10,13 +10,11 @@ export class Rocket {
     }
     //This method pushes all the massKg properties from the interface into an array
     sumMass(items:Payload[]): number{
-        let counter: number = 0;
+        let weight: number = 0;
         for (let i=0; i<items.length; i++){
-           
-            counter = items[i].massKg;
-            counter += counter;
+            weight += items[i].massKg;
         }
-        return counter/2;
+        return weight;
     }
     currentMassKg(): number{
         let astronautsMass = this.sumMass(this.astronauts);
